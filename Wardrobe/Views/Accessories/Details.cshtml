@@ -1,0 +1,76 @@
+﻿@model Wardrobe.Models.Accessory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Accessory</h4>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11 col-sm-12 col-xs-12">
+
+
+
+
+
+                <h3>
+                    @Html.DisplayNameFor(model => model.Name)
+                </h3>
+
+                <p>
+                    @Html.DisplayFor(model => model.Name)
+                </p>
+
+                <h3>
+                    @Html.DisplayNameFor(model => model.Photo)
+                </h3>
+
+                <p>
+                    <img class="img-responsive Test Photo" src="@Html.DisplayFor(model => model.Photo)" alt="TestPhoto" />
+                </p>
+
+                <h3>
+                    @Html.DisplayNameFor(model => model.Type)
+                </h3>
+
+                <p>
+                    @Html.DisplayFor(model => model.Type)
+                </p>
+
+                <h3>
+                    @Html.DisplayNameFor(model => model.Color)
+                </h3>
+
+                <p>
+                    @Html.DisplayFor(model => model.Color)
+                </p>
+
+                <h3>
+                    @Html.DisplayNameFor(model => model.Season)
+                </h3>
+
+                <p>
+                    @Html.DisplayFor(model => model.Season)
+                </p>
+
+                <h3>
+                    @Html.DisplayNameFor(model => model.Occasion)
+                </h3>
+
+                <p>
+                    @Html.DisplayFor(model => model.Occasion)
+                </p>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoriesID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>

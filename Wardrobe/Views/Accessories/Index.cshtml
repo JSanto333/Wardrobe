@@ -1,0 +1,143 @@
+﻿@model IEnumerable<Wardrobe.Models.Accessory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="container">
+    <div class="row">
+
+
+
+        <div class="col-md-2 col-sm-8 col-xs-12">
+            <h3>
+                @Html.DisplayNameFor(model => model.Name)
+            </h3>
+            </div>
+
+
+
+            <div class="col-md-2 col-sm-8 col-xs-12">
+
+                <h3>
+                    @Html.DisplayNameFor(model => model.Photo)
+                </h3>
+            </div>
+
+
+
+            <div class="col-md-2 col-sm-8 col-xs-12">
+                <h3>
+                    @Html.DisplayNameFor(model => model.Type)
+                </h3>
+            </div>
+
+
+
+            <div class="col-md-2 col-sm-8 col-xs-12">
+
+                <h3>
+                    @Html.DisplayNameFor(model => model.Color)
+                </h3>
+            </div>
+
+
+
+
+            <div class="col-md-2 col-sm-8 col-xs-12">
+                <h3>
+                    @Html.DisplayNameFor(model => model.Season)
+                </h3>
+            </div>
+
+
+
+
+
+            <div class="column-md-2 column-sm-8 column-xs-12">
+                <h1>
+                    @Html.DisplayNameFor(model => model.Occasion)
+                </h1>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    @foreach (var item in Model)
+    {
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-2 col-sm-8 col-xs-12">
+                    <p>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </p>
+                    </div>
+
+
+
+
+                    <div class="col-md-2 col-sm-8 col-xs-12">
+                        <p>
+                            <img class="img-responsive Test Photo" src="@Html.DisplayFor(modelItem => item.Photo)" alt="TestPhoto" />
+                        </p>
+                    </div>
+
+
+
+
+                    <div class="col-md-2 col-sm-8 col-xs-12">
+                        <p>
+                            @Html.DisplayFor(modelItem => item.Type)
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-2 col-sm-8 col-xs-12">
+                        <p>
+                            @Html.DisplayFor(modelItem => item.Color)
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-2 col-sm-8 col-xs-12">
+                        <p>
+                            @Html.DisplayFor(modelItem => item.Season)
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-2 col-sm-8 col-xs-12">
+
+                        <p>
+                            @Html.DisplayFor(modelItem => item.Occasion)
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.AccessoriesID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.AccessoriesID })
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            }
+
+

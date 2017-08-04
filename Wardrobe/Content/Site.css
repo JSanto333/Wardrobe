@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*--------------------------------Start of my css tags----------------------------------------------------------*/
+.hr {
+background-color: black;
+border: 1px solid #000000;
+height: 10px;
+margin: 10px 0;
+width: 760px;
+}
