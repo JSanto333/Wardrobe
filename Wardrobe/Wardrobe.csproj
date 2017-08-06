@@ -209,6 +209,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\guys clothing.png" />
     <Content Include="Content\images\guys walking.jpg" />
+    <Content Include="Content\images\red designer hat.jpg" />
     <Content Include="Content\images\wristwatch.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
